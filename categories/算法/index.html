@@ -20,19 +20,17 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="C++优化输入输出printf&#x2F;scanf快于cout&#x2F;cin，具体原因百度 不过后者可以通过在main开始时加下面两行代码实现优化，优化后效率和前者差不多。 123ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);  位运算参考-&gt; 位运算">
-<meta property="og:type" content="article">
+  <meta name="description" content="MSTBL的博客">
+<meta property="og:type" content="website">
 <meta property="og:title" content="MSTBL的博客">
-<meta property="og:url" content="http://yoursite.com/cppoptimize/index.html">
+<meta property="og:url" content="http://yoursite.com/categories/%E7%AE%97%E6%B3%95/index.html">
 <meta property="og:site_name" content="MSTBL的博客">
-<meta property="og:description" content="C++优化输入输出printf&#x2F;scanf快于cout&#x2F;cin，具体原因百度 不过后者可以通过在main开始时加下面两行代码实现优化，优化后效率和前者差不多。 123ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);  位运算参考-&gt; 位运算">
+<meta property="og:description" content="MSTBL的博客">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-08-23T13:57:04.607Z">
-<meta property="article:modified_time" content="2019-05-12T08:48:41.000Z">
 <meta property="article:author" content="MSTBL">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/cppoptimize/">
+<link rel="canonical" href="http://yoursite.com/categories/%E7%AE%97%E6%B3%95/">
 
 
 <script id="page-configurations">
@@ -40,12 +38,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : true,
+    isPost : false,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title> | MSTBL的博客</title>
+  <title>分类: 算法 | MSTBL的博客</title>
   
 
 
@@ -153,90 +151,51 @@
         <div class="content-wrap">
           
 
-          <div class="content post posts-expand">
+          <div class="content category">
             
 
-    
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/cppoptimize/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="MSTBL">
-      <meta itemprop="description" content="MSTBL的博客">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="MSTBL的博客">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-08-23 21:57:04" itemprop="dateCreated datePublished" datetime="2020-08-23T21:57:04+08:00">2020-08-23</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-05-12 16:48:41" itemprop="dateModified" datetime="2019-05-12T16:48:41+08:00">2019-05-12</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+  
+  <div class="post-block">
+    <div class="posts-collapse">
+      <div class="collection-title">
+        <h2 class="collection-header">算法
+          <small>分类</small>
+        </h2>
+      </div>
 
       
-        <h1 id="C-优化"><a href="#C-优化" class="headerlink" title="C++优化"></a>C++优化</h1><h2 id="输入输出"><a href="#输入输出" class="headerlink" title="输入输出"></a>输入输出</h2><p>printf/scanf快于cout/cin，具体原因百度</p>
-<p>不过后者可以通过在main开始时加下面两行代码实现优化，优化后效率和前者差不多。</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ios_base::sync_with_stdio(<span class="literal">false</span>);</span><br><span class="line"><span class="built_in">cin</span>.tie(<span class="number">0</span>);</span><br><span class="line"><span class="built_in">cout</span>.tie(<span class="number">0</span>);</span><br></pre></td></tr></table></figure>
-
-<h2 id="位运算"><a href="#位运算" class="headerlink" title="位运算"></a>位运算</h2><p>参考-&gt; <a href="/.../other/bitwise">位运算</a></p>
-
+    <div class="collection-year">
+      <span class="collection-header">2020</span>
     </div>
 
-    
-    
-    
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
 
-      <footer class="post-footer">
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2020-08-23T21:56:59+08:00"
+              content="2020-08-23">
+          08-23
+        </time>
+      </div>
 
-        
+      <div class="post-title">
+          <a class="post-title-link" href="/acproblem/" itemprop="url">
+            <span itemprop="name">排列组合问题</span>
+          </a>
+      </div>
 
-
-        
-    <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/kmp/" rel="prev" title="">
-      <i class="fa fa-chevron-left"></i> 
-    </a></div>
-      <div class="post-nav-item">
-    <a href="/sort/" rel="next" title="">
-       <i class="fa fa-chevron-right"></i>
-    </a></div>
-    </div>
-      </footer>
-    
+    </header>
   </article>
+
+    </div>
+  </div>
   
   
+  
+
   
 
 
@@ -289,7 +248,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#C-%E4%BC%98%E5%8C%96"><span class="nav-number">1.</span> <span class="nav-text">C++优化</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA"><span class="nav-number">1.1.</span> <span class="nav-text">输入输出</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%8D%E8%BF%90%E7%AE%97"><span class="nav-number">1.2.</span> <span class="nav-text">位运算</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
