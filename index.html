@@ -157,6 +157,277 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/mdlookup/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="MSTBL">
+      <meta itemprop="description" content="MSTBL的博客">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MSTBL的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/mdlookup/" class="post-title-link" itemprop="url">Markdown速查</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-08-23 21:57:22" itemprop="dateCreated datePublished" datetime="2020-08-23T21:57:22+08:00">2020-08-23</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-09-14 18:36:20" itemprop="dateModified" datetime="2020-09-14T18:36:20+08:00">2020-09-14</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E9%80%9F%E6%9F%A5/" itemprop="url" rel="index"><span itemprop="name">速查</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="Markdown速查"><a href="#Markdown速查" class="headerlink" title="Markdown速查"></a>Markdown速查</h1><p>可加HTML</p>
+<p>行之间需加空行，要不然会连在一起</p>
+<h2 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">1.</span><br><span class="line"></span><br><span class="line"><span class="section"># 一级标题//#和文字间要有空格</span></span><br><span class="line"></span><br><span class="line"><span class="section">## 二级标题</span></span><br><span class="line"></span><br><span class="line"><span class="section">### 三级标题</span></span><br><span class="line"></span><br><span class="line">...//后面+空格加标题，n个#n级</span><br><span class="line"></span><br><span class="line">2.</span><br><span class="line"></span><br><span class="line">//超链接</span><br><span class="line"></span><br><span class="line">[<span class="string">文字</span>](<span class="link">url</span>)</span><br><span class="line"></span><br><span class="line">3.</span><br><span class="line"><span class="code">    ```语言//Markdown对语言名的支持很强大，比如c++即可以写成cpp又可以写成cpp，大小写不敏感</span></span><br><span class="line"><span class="code">    //此处不用空行</span></span><br><span class="line"><span class="code">    代码块</span></span><br><span class="line"><span class="code">    //此处也不用空行</span></span><br></pre></td></tr></table></figure>
+
+<p>4.</p>
+<p><code>行内语句</code></p>
+<p>5.</p>
+<blockquote>
+<p>引用 //引用可嵌套，或者说多重引用</p>
+</blockquote>
+<blockquote>
+<p>然<br>//这里不需要空行</p>
+<blockquote>
+<p>并<br>//同理，这里也不需要</p>
+<blockquote>
+<p>卵</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>直接这样也可</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>6.</p>
+<p>— //分割线，上下不需空行</p>
+<p>7.</p>
+<p>| j\i | 1   | 2   | ……  | c   |<br>| — | — | — | — | — |//第二行必须这样|-|-|并且格数与第一行相同<br>| 1（底） |||||<br>| 2 | ||||<br>| …… |||||<br>| n（顶） ||||最终解|</p>
+<p>8.</p>
+<p>9.</p>
+<p><em>斜体</em></p>
+<p>10.</p>
+<p><strong>粗体</strong> //<strong><em>粗斜体</em></strong>，符号间不加空格</p>
+<p>11.</p>
+<p><del>删除线</del></p>
+<p>12.</p>
+<p>//![图片alt](图片地址 ‘’图片title’’)<br>//图片alt就是显示在图片下面的文字，相当于对图片内容的解释。<br>//图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加</p>
+<p><img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=702257389,1274025419&fm=27&gp=0.jpg" alt="blockchain" title="区块链"></p>
+<p>13.</p>
+<p>//列表：<br>//用 - + * 任何一种都可以<br>//有序列表数字加”.”<br>//上级与下级之间加三个空格或tab<br>//不用空行</p>
+<ul>
+<li>What<ul>
+<li>the<ul>
+<li>f</li>
+<li>u</li>
+<li>c</li>
+<li>k?</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>14.</p>
+<ul>
+<li><p><input disabled="" type="checkbox">  选择框   //里面和前面要有空格，后面要有空格加字</p>
+</li>
+<li><p><input checked="" disabled="" type="checkbox">  (选中)选择框 //同上，里面的空格换成”x”</p>
+</li>
+</ul>
+<p>15.</p>
+<p>//表情详见<a target="_blank" rel="noopener" href="https://github.com/guodongxiaren/README/blob/master/emoji.md">https://github.com/guodongxiaren/README/blob/master/emoji.md</a><br>//eg.</p>
+<p>:blush:</p>
+<p>16.</p>
+<p>++下划线++     //有些编译器（包括GitHub）不支持</p>
+<p>17.</p>
+<p>==高亮==      //同上</p>
+<p>18.</p>
+<p>//待解释文字[^脚注 id]<br>//[^脚注 id]:注释内容<br>//eg.</p>
+<p>踩<a href="%E8%9B%8B%EF%BC%9F">^1</a> //GitHub脚注只能写数字</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">## HTML标识</span><br><span class="line"></span><br><span class="line">&#96;&#96;&#96;html</span><br><span class="line">&lt;sub&gt;下标&lt;&#x2F;sub&gt;</span><br><span class="line"></span><br><span class="line">&lt;sup&gt;上标&lt;&#x2F;sup&gt;</span><br><span class="line"></span><br><span class="line">&lt;center&gt;居中&lt;&#x2F;center&gt;</span><br><span class="line"></span><br><span class="line">&amp;nbsp;空格</span><br><span class="line"></span><br><span class="line">&lt;img src&#x3D;&quot;https:&#x2F;&#x2F;ss2.bdstatic.com&#x2F;70cFvnSh_Q1YnxGkpoWK1HF6hhy&#x2F;it&#x2F;u&#x3D;3535676397,3118512885&amp;fm&#x3D;26&amp;gp&#x3D;0.jpghttps:&#x2F;&#x2F;github.com&#x2F;yeszao&#x2F;dnmp&quot; width&#x3D;256 height&#x3D;256 &#x2F;&gt;&#x2F;&#x2F;用HTML的方法加图片，可以设置大小。</span><br><span class="line"></span><br><span class="line">&lt;img src&#x3D;&quot;https:&#x2F;&#x2F;ss2.bdstatic.com&#x2F;70cFvnSh_Q1YnxGkpoWK1HF6hhy&#x2F;it&#x2F;u&#x3D;3535676397,3118512885&amp;fm&#x3D;26&amp;gp&#x3D;0.jpghttps:&#x2F;&#x2F;github.com&#x2F;yeszao&#x2F;dnmp&quot; width&#x3D;50% height&#x3D;50% &#x2F;&gt;width和height后面的50%就是根据窗口的大小以一定的比例显示图片。值得一说的是，这种按照百分比显示方法，是以width方向为准，并保持纵横比的，换句话说，把设置width的部分去掉，height的值改为任意百分比，显示的图像都是原图大小。因此用此方法的时候，可以把height设置缺省。</span><br><span class="line"></span><br><span class="line">&lt;img src&#x3D;&quot;https:&#x2F;&#x2F;ss2.bdstatic.com&#x2F;70cFvnSh_Q1YnxGkpoWK1HF6hhy&#x2F;it&#x2F;u&#x3D;3535676397,3118512885&amp;fm&#x3D;26&amp;gp&#x3D;0.jpghttps:&#x2F;&#x2F;github.com&#x2F;yeszao&#x2F;dnmp&quot; width&#x3D;50% &#x2F;&gt;&#x2F;&#x2F;height缺省</span><br></pre></td></tr></table></figure>
+
+<hr>
+<hr>
+<hr>
+<h2 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h2><p>1.</p>
+<p>一级标题见开头</p>
+<h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><p>超链接：<a href="url">文字</a></p>
+<p>3.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">代码块</span><br></pre></td></tr></table></figure>
+
+<p>4.</p>
+<p><code>行内语句</code></p>
+<p>5.</p>
+<blockquote>
+<p>引用</p>
+</blockquote>
+<blockquote>
+<p>然</p>
+<blockquote>
+<p>并</p>
+<blockquote>
+<p>卵</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>直接这样也可</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>6.</p>
+<hr>
+<p>7.</p>
+<table>
+<thead>
+<tr>
+<th>j\i</th>
+<th>1</th>
+<th>2</th>
+<th>……</th>
+<th>c</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1（底）</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>……</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>n（顶）</td>
+<td>最终解</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>8.</p>
+<p>9.</p>
+<p><em>斜体</em></p>
+<p>10.</p>
+<p><strong>粗体</strong></p>
+<p>11.</p>
+<p><del>删除线</del></p>
+<p>12.</p>
+<p><img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=702257389,1274025419&fm=27&gp=0.jpg" alt="blockchain" title="区块链"></p>
+<p>13.</p>
+<ul>
+<li>What<ul>
+<li>the<ul>
+<li>f</li>
+<li>u</li>
+<li>c</li>
+<li>k?</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>14.</p>
+<ul>
+<li><p><input disabled="" type="checkbox">  选择框</p>
+</li>
+<li><p><input checked="" disabled="" type="checkbox">  (选中)选择框</p>
+</li>
+</ul>
+<p>15.</p>
+<p>:blush:</p>
+<p>16.</p>
+<p>++下划线++</p>
+<p>17.</p>
+<p>==高亮==</p>
+<p>18.</p>
+<p>踩 <a href="%E8%9B%8B%EF%BC%9F">^1</a></p>
+<hr>
+<p><sub>下标</sub></p>
+<p><sup>上标</sup></p>
+<center>居中</center>
+
+<p>&nbsp;空格</p>
+<img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3535676397,3118512885&fm=26&gp=0.jpghttps://github.com/yeszao/dnmp" width=256 height=256 />
+
+<img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3535676397,3118512885&fm=26&gp=0.jpghttps://github.com/yeszao/dnmp" width=50% height=50% />
+
+<img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3535676397,3118512885&fm=26&gp=0.jpghttps://github.com/yeszao/dnmp" width=50% />
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/bitwise/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -752,14 +1023,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
   </nav>
