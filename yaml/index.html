@@ -20,19 +20,19 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="GitGit用#注释 初次使用123git config --global user.name  [名字]git config --global user.email [邮箱]ssh-keygen -t rsa #生成ssh公钥，用RSA加密  之后把ssh公钥放到GitHub之类的代码管理网站上  ssh公钥生成在c:\users\[用户名]\.ssh\  库12git init 把当前目录初始">
+  <meta name="description" content="YAML 基本语法基本大小写敏感 用#注释 用a: b代表一对键值对 注意：冒号之后有一个空格 用空格代表层级，如： 123456a: b: c d: e f:  g: h  i: j  空格相同的就是同一层级 空格数不限，但是同一级空格数必须相同 理论上不允许用tab缩进 行内写法： 1a: &amp;#123;b: c,d: e&amp;#125;  不能有两个相同的key 值写法字符串不用加双引号、单引号">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Git">
-<meta property="og:url" content="http://yoursite.com/git/index.html">
+<meta property="og:title" content="YAML 基本语法">
+<meta property="og:url" content="http://yoursite.com/yaml/index.html">
 <meta property="og:site_name" content="MSTBL的博客">
-<meta property="og:description" content="GitGit用#注释 初次使用123git config --global user.name  [名字]git config --global user.email [邮箱]ssh-keygen -t rsa #生成ssh公钥，用RSA加密  之后把ssh公钥放到GitHub之类的代码管理网站上  ssh公钥生成在c:\users\[用户名]\.ssh\  库12git init 把当前目录初始">
+<meta property="og:description" content="YAML 基本语法基本大小写敏感 用#注释 用a: b代表一对键值对 注意：冒号之后有一个空格 用空格代表层级，如： 123456a: b: c d: e f:  g: h  i: j  空格相同的就是同一层级 空格数不限，但是同一级空格数必须相同 理论上不允许用tab缩进 行内写法： 1a: &amp;#123;b: c,d: e&amp;#125;  不能有两个相同的key 值写法字符串不用加双引号、单引号">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-08-21T05:13:37.636Z">
-<meta property="article:modified_time" content="2020-09-14T10:43:51.054Z">
+<meta property="article:published_time" content="2020-10-07T12:53:54.829Z">
+<meta property="article:modified_time" content="2020-10-08T03:09:22.395Z">
 <meta property="article:author" content="MSTBL">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/git/">
+<link rel="canonical" href="http://yoursite.com/yaml/">
 
 
 <script id="page-configurations">
@@ -45,7 +45,7 @@
   };
 </script>
 
-  <title>Git | MSTBL的博客</title>
+  <title>YAML 基本语法 | MSTBL的博客</title>
   
 
 
@@ -160,7 +160,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/git/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/yaml/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -173,7 +173,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Git
+          YAML 基本语法
         </h1>
 
         <div class="post-meta">
@@ -183,24 +183,15 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2020-08-21 13:13:37" itemprop="dateCreated datePublished" datetime="2020-08-21T13:13:37+08:00">2020-08-21</time>
+              <time title="创建时间：2020-10-07 20:53:54" itemprop="dateCreated datePublished" datetime="2020-10-07T20:53:54+08:00">2020-10-07</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-14 18:43:51" itemprop="dateModified" datetime="2020-09-14T18:43:51+08:00">2020-09-14</time>
+                <time title="修改时间：2020-10-08 11:09:22" itemprop="dateModified" datetime="2020-10-08T11:09:22+08:00">2020-10-08</time>
               </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E9%80%9F%E6%9F%A5/" itemprop="url" rel="index"><span itemprop="name">速查</span></a>
-                </span>
-            </span>
 
           
 
@@ -213,40 +204,42 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h1><p>Git用<code>#</code>注释</p>
-<h2 id="初次使用"><a href="#初次使用" class="headerlink" title="初次使用"></a>初次使用</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name  [名字]</span><br><span class="line">git config --global user.email [邮箱]</span><br><span class="line">ssh-keygen -t rsa #生成ssh公钥，用RSA加密</span><br></pre></td></tr></table></figure>
+        <h1 id="YAML-基本语法"><a href="#YAML-基本语法" class="headerlink" title="YAML 基本语法"></a>YAML 基本语法</h1><h2 id="基本"><a href="#基本" class="headerlink" title="基本"></a>基本</h2><p>大小写敏感</p>
+<p>用#注释</p>
+<p>用<code>a: b</code>代表一对键值对</p>
+<p>注意：冒号之后有一个空格</p>
+<p>用空格代表层级，如：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">a:</span></span><br><span class="line"> <span class="attr">b:</span> <span class="string">c</span></span><br><span class="line"> <span class="attr">d:</span> <span class="string">e</span></span><br><span class="line"> <span class="attr">f:</span></span><br><span class="line">  <span class="attr">g:</span> <span class="string">h</span></span><br><span class="line">  <span class="attr">i:</span> <span class="string">j</span></span><br></pre></td></tr></table></figure>
 
-<p>之后把ssh公钥放到GitHub之类的代码管理网站上</p>
-<ul>
-<li>ssh公钥生成在<code>c:\users\[用户名]\.ssh\</code></li>
-</ul>
-<h2 id="库"><a href="#库" class="headerlink" title="库"></a>库</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git init 把当前目录初始化成库</span><br><span class="line">git clone [url] 从URL克隆库 </span><br></pre></td></tr></table></figure>
+<p>空格相同的就是同一层级</p>
+<p>空格数不限，但是同一级空格数必须相同</p>
+<p>理论上不允许用tab缩进</p>
+<p>行内写法：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">a:</span> &#123;<span class="attr">b:</span> <span class="string">c</span>,<span class="attr">d:</span> <span class="string">e</span>&#125;</span><br></pre></td></tr></table></figure>
 
-<h2 id="常用操作"><a href="#常用操作" class="headerlink" title="常用操作"></a>常用操作</h2><h3 id="提交"><a href="#提交" class="headerlink" title="提交"></a>提交</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add . #把所有改动的文件放入暂存区</span><br><span class="line">git commit -m [信息] #提交暂存区文件到库</span><br><span class="line">git push #提交本地库到远程库</span><br></pre></td></tr></table></figure>
+<p>不能有两个相同的key</p>
+<h2 id="值写法"><a href="#值写法" class="headerlink" title="值写法"></a>值写法</h2><p>字符串不用加双引号、单引号</p>
+<p>双引号表示不转义其中的字符，单引号反之</p>
+<h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">a:</span></span><br><span class="line"> <span class="bullet">-</span> <span class="string">b</span></span><br><span class="line"> <span class="bullet">-</span> <span class="string">c</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git status #查看库状态：有哪些改动文件，暂存区是否已提交等</span><br></pre></td></tr></table></figure>
+<p>行内写法：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">a:</span> [<span class="string">b</span>,<span class="string">c</span>]</span><br></pre></td></tr></table></figure>
 
-<h2 id="gitignore"><a href="#gitignore" class="headerlink" title=".gitignore"></a>.gitignore</h2><p>设置提交时忽略哪些文件</p>
-<ol>
-<li><blockquote>
-<p>以斜杠/开头表示目录；<br>以星号*通配多个字符；<br>以问号?通配单个字符<br>以方括号[]包含单个字符的匹配列表；<br>以叹号!表示不忽略(跟踪)匹配到的文件或目录；</p>
-</blockquote>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="强制类型转换"><a href="#强制类型转换" class="headerlink" title="强制类型转换"></a>强制类型转换</h3><p><code>a: !!str b</code>将<code>b</code>强制转换成字符串</p>
+<h3 id="指针"><a href="#指针" class="headerlink" title="指针"></a>指针</h3><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">father:</span> <span class="meta">&amp;father1</span></span><br><span class="line"> <span class="attr">name:</span> <span class="string">a</span></span><br><span class="line"><span class="attr">monitor:</span> <span class="meta">*father</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="开头结尾"><a href="#开头结尾" class="headerlink" title="开头结尾"></a>开头结尾</h3><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">开头</span></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"></span><br><span class="line"><span class="string">...</span></span><br><span class="line"><span class="string">结尾</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ol>
+<li><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Mj411f7Mw">【教程】十分钟让你了解yaml - 轩脉刃de刀光剑影</a></p>
 </li>
-<li></li>
-</ol>
-<blockquote>
-<p>a.<br>规则：fd1/*<br>说明：忽略目录 fd1 下的全部内容；注意，不管是根目录下的 /fd1/ 目录，还是某个子目录 /child/fd1/ 目录，都会被忽略；<br>b.<br>规则：/fd1/*<br>说明：忽略根目录下的 /fd1/ 目录的全部内容；<br>c.<br>规则：<br>/*<br>!.gitignore<br>!/fw/bin/<br>!/fw/sf/<br>说明：忽略全部内容，但是不忽略 .gitignore 文件、根目录下的 /fw/bin/ 和 /fw/sf/ 目录；</p>
-</blockquote>
-<ol start="3">
-<li><blockquote>
-<p><em>.txt       #忽略所有 .txt结尾的文件,这样的话上传就不会被选中！<br>!lib.txt     #不忽略lib.txt<br>build/       #忽略build/目录下的所有文件<br>doc/</em>.txt    #会忽略 doc/notes.txt 但不包括 doc/server/arch.txt</p>
-</blockquote>
+<li><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1yD4y1D7wG">YAML配置文件的写法</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/YAML">YAML-维基百科</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://yaml.org/">yaml.org</a></p>
 </li>
 </ol>
-<h2 id="TIPS"><a href="#TIPS" class="headerlink" title="TIPS"></a>TIPS</h2><p>git bash 里不能 ctrl+c ctrl+v 要右键复制粘贴</p>
-<h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1FE411P7B3?p=1">狂神说的视频教程</a></p>
-<p><a target="_blank" rel="noopener" href="https://gitee.com/all-about-git">码云 Git大全</a></p>
-<p><a target="_blank" rel="noopener" href="https://github.com/github/gitignore">GitHub上的一个.gitignore集合</a></p>
 
     </div>
 
@@ -261,10 +254,13 @@
 
         
     <div class="post-nav">
-      <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/acproblem/" rel="next" title="排列组合问题">
-      排列组合问题 <i class="fa fa-chevron-right"></i>
+    <a href="/mdlookup/" rel="prev" title="Markdown速查">
+      <i class="fa fa-chevron-left"></i> Markdown速查
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/lookup/" rel="next" title="速查网站集合">
+      速查网站集合 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -325,7 +321,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Git"><span class="nav-number">1.</span> <span class="nav-text">Git</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9D%E6%AC%A1%E4%BD%BF%E7%94%A8"><span class="nav-number">1.1.</span> <span class="nav-text">初次使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BA%93"><span class="nav-number">1.2.</span> <span class="nav-text">库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C"><span class="nav-number">1.3.</span> <span class="nav-text">常用操作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8F%90%E4%BA%A4"><span class="nav-number">1.3.1.</span> <span class="nav-text">提交</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B6%E4%BB%96"><span class="nav-number">1.3.2.</span> <span class="nav-text">其他</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#gitignore"><span class="nav-number">1.4.</span> <span class="nav-text">.gitignore</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#TIPS"><span class="nav-number">1.5.</span> <span class="nav-text">TIPS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%9B%B8%E5%85%B3%E9%93%BE%E6%8E%A5"><span class="nav-number">1.6.</span> <span class="nav-text">相关链接</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#YAML-%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95"><span class="nav-number">1.</span> <span class="nav-text">YAML 基本语法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC"><span class="nav-number">1.1.</span> <span class="nav-text">基本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%80%BC%E5%86%99%E6%B3%95"><span class="nav-number">1.2.</span> <span class="nav-text">值写法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E7%BB%84"><span class="nav-number">1.3.</span> <span class="nav-text">数组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B6%E4%BB%96"><span class="nav-number">1.4.</span> <span class="nav-text">其他</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%BA%E5%88%B6%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2"><span class="nav-number">1.4.1.</span> <span class="nav-text">强制类型转换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8C%87%E9%92%88"><span class="nav-number">1.4.2.</span> <span class="nav-text">指针</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%80%E5%A4%B4%E7%BB%93%E5%B0%BE"><span class="nav-number">1.4.3.</span> <span class="nav-text">开头结尾</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%82%E8%80%83"><span class="nav-number">1.5.</span> <span class="nav-text">参考</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -453,7 +449,7 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
       repo        : 'mstbl.github.io',
       owner       : 'MSTBL',
       admin       : ['MSTBL'],
-      id          : 'd4eda917bd8d6153c6de24fa42758c5e',
+      id          : 'b42dabcbdac9d0f732a51b1c431835fc',
         language: 'zh-CN',
       distractionFreeMode: true
     });
