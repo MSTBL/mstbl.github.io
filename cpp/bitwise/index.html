@@ -20,19 +20,19 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="背包问题背包问题有许多种，其中最简单的形如最优装载问题:给出n个物体，第i个物体的重量为wi。在总重量不超过c的前提下选择尽可能多的物体。这种问题就是最简单的贪心问题，用贪心算法就能得到最优解。 复杂一些的是部分背包问题。这类题在最优装载问题的基础上给了每个物体价值vi。也可以用贪心算法做，根据每个物体的性价比贪心就行。 0-1背包问题而对于更复杂的0-1背包问题，背包问题就不一定能得到最优解了。">
+  <meta name="description" content="位运算用位运算代替普通运算可以加快运算速度 位运算基础&gt;&gt;n 右移n位，舍去末n位  &gt;&gt;&#x3D;n 右移n位并赋值  &lt;&lt;n 左移n位，末尾添0  &lt;&lt;&#x3D;n 左移n位并赋值，相当于乘以2^n a&lt;&lt;&#x3D;1 等价于a*&#x3D;2    &amp; 按位与 ^ 按位异或，异或运算真值表如下    A B res    1 1 0   1 0 1   0">
 <meta property="og:type" content="article">
-<meta property="og:title" content="背包问题">
-<meta property="og:url" content="http://yoursite.com/knapsack/index.html">
+<meta property="og:title" content="C++位运算">
+<meta property="og:url" content="http://yoursite.com/cpp/bitwise/index.html">
 <meta property="og:site_name" content="MSTBL的博客">
-<meta property="og:description" content="背包问题背包问题有许多种，其中最简单的形如最优装载问题:给出n个物体，第i个物体的重量为wi。在总重量不超过c的前提下选择尽可能多的物体。这种问题就是最简单的贪心问题，用贪心算法就能得到最优解。 复杂一些的是部分背包问题。这类题在最优装载问题的基础上给了每个物体价值vi。也可以用贪心算法做，根据每个物体的性价比贪心就行。 0-1背包问题而对于更复杂的0-1背包问题，背包问题就不一定能得到最优解了。">
+<meta property="og:description" content="位运算用位运算代替普通运算可以加快运算速度 位运算基础&gt;&gt;n 右移n位，舍去末n位  &gt;&gt;&#x3D;n 右移n位并赋值  &lt;&lt;n 左移n位，末尾添0  &lt;&lt;&#x3D;n 左移n位并赋值，相当于乘以2^n a&lt;&lt;&#x3D;1 等价于a*&#x3D;2    &amp; 按位与 ^ 按位异或，异或运算真值表如下    A B res    1 1 0   1 0 1   0">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-08-23T13:56:59.895Z">
-<meta property="article:modified_time" content="2020-09-14T10:41:03.272Z">
+<meta property="article:published_time" content="2020-08-23T13:57:22.465Z">
+<meta property="article:modified_time" content="2020-09-14T10:43:47.754Z">
 <meta property="article:author" content="MSTBL">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/knapsack/">
+<link rel="canonical" href="http://yoursite.com/cpp/bitwise/">
 
 
 <script id="page-configurations">
@@ -45,7 +45,7 @@
   };
 </script>
 
-  <title>背包问题 | MSTBL的博客</title>
+  <title>C++位运算 | MSTBL的博客</title>
   
 
 
@@ -160,7 +160,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/knapsack/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/cpp/bitwise/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -173,7 +173,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          背包问题
+          C++位运算
         </h1>
 
         <div class="post-meta">
@@ -183,14 +183,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2020-08-23 21:56:59" itemprop="dateCreated datePublished" datetime="2020-08-23T21:56:59+08:00">2020-08-23</time>
+              <time title="创建时间：2020-08-23 21:57:22" itemprop="dateCreated datePublished" datetime="2020-08-23T21:57:22+08:00">2020-08-23</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-14 18:41:03" itemprop="dateModified" datetime="2020-09-14T18:41:03+08:00">2020-09-14</time>
+                <time title="修改时间：2020-09-14 18:43:47" itemprop="dateModified" datetime="2020-09-14T18:43:47+08:00">2020-09-14</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -198,7 +198,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%AE%97%E6%B3%95/" itemprop="url" rel="index"><span itemprop="name">算法</span></a>
+                  <a href="/categories/C/" itemprop="url" rel="index"><span itemprop="name">C++</span></a>
                 </span>
             </span>
 
@@ -213,61 +213,59 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="背包问题"><a href="#背包问题" class="headerlink" title="背包问题"></a>背包问题</h1><p>背包问题有许多种，其中最简单的形如最优装载问题:给出n个物体，第i个物体的重量为w<sub>i</sub>。在总重量不超过c的前提下选择尽可能多的物体。这种问题就是最简单的贪心问题，用贪心算法就能得到最优解。</p>
-<p>复杂一些的是部分背包问题。这类题在最优装载问题的基础上给了每个物体价值v<sub>i</sub>。也可以用贪心算法做，根据每个物体的性价比贪心就行。</p>
-<h2 id="0-1背包问题"><a href="#0-1背包问题" class="headerlink" title="0-1背包问题"></a>0-1背包问题</h2><p>而对于更复杂的0-1背包问题，背包问题就不一定能得到最优解了。这时候我们就要用到动态规划。</p>
-<blockquote>
-<p>动态规划与分治法相似，都是通过组合子问题的解来求解原问题……动态规划算法对每个字问题只求解一次，将其解保存在一个表格中，从而无需每次求解一个子问题是都重新计算，避免了这种不必要的计算工作。——《算法导论》</p>
-</blockquote>
-<hr>
+        <h1 id="位运算"><a href="#位运算" class="headerlink" title="位运算"></a>位运算</h1><p>用位运算代替普通运算可以加快运算速度</p>
+<h2 id="位运算基础"><a href="#位运算基础" class="headerlink" title="位运算基础"></a>位运算基础</h2><p><code>&gt;&gt;n</code> 右移n位，舍去末n位</p>
+<ul>
+<li><code>&gt;&gt;=n</code> 右移n位并赋值</li>
+</ul>
+<p><code>&lt;&lt;n</code> 左移n位，末尾添0</p>
+<ul>
+<li><code>&lt;&lt;=n</code> 左移n位并赋值，相当于乘以2^n<ul>
+<li><strong><code>a&lt;&lt;=1</code> 等价于<code>a*=2</code></strong></li>
+</ul>
+</li>
+</ul>
+<p><code>&amp;</code> 按位与</p>
+<p><code>^</code> 按位异或，异或运算真值表如下</p>
 <table>
 <thead>
 <tr>
-<th>j\i</th>
-<th>1</th>
-<th>2</th>
-<th>……</th>
-<th>c</th>
+<th>A</th>
+<th>B</th>
+<th>res</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>1（底）</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
 </tr>
 <tr>
-<td>2</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
 </tr>
 <tr>
-<td>……</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
 </tr>
 <tr>
-<td>n（顶）</td>
-<td>最终解</td>
-<td></td>
-<td></td>
-<td></td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
 </tr>
 </tbody></table>
-<hr>
-<p>我们可以用一个如上表格所示二维数组来存储r<sub>max</sub>的值，以c为列数，i为行，之后自底向上地求解最大值。动态转移方程为：</p>
-<center>r<sub>max</sub>[i][j]=max(r<sub>max</sub>[i-w[a]][j-1]+v[a],r<sub>max</sub>[i][j-1])</center>
+<p><code>|</code> 按位或</p>
+<p><code>~</code> 按位取反（只有这个是一元运算符）</p>
+<h2 id="加减"><a href="#加减" class="headerlink" title="加减"></a>加减</h2><p><code>a+b=a^b+(a&amp;b)&lt;&lt;1</code></p>
+<p><code>a^b</code>等价于不考虑进位时的<code>a+b</code></p>
+<p><code>(a&amp;b)&lt;&lt;1</code>进位操作，两个数此位都是1时才进位，按位与也一样（都为一才为一）。再把结果左移一位，完成进位</p>
+<p>减法把减数按位取反之后同加法。</p>
+<h2 id="计算一个数（B）中有多少1"><a href="#计算一个数（B）中有多少1" class="headerlink" title="计算一个数（B）中有多少1"></a>计算一个数（B）中有多少1</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> (x)</span><br><span class="line">&#123;</span><br><span class="line">    count++;</span><br><span class="line">    x = x&amp;(x - <span class="number">1</span>);  <span class="comment">//消去x中最后一位1</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>这样我们需要<code>c*n</code>的空间。为了减少空间，我们可以将二维数组压缩成一位数组，同样以c为列数，对i~n的物体分别倒序遍历一次这个数组，这样就只需要<code>c</code>的空间了。这样的动态转移方程为：</p>
-<p>题目：<a target="_blank" rel="noopener" href="https://www.luogu.org/problemnew/show/P1048">P1048 采药</a></p>
-<h2 id="完全背包问题"><a href="#完全背包问题" class="headerlink" title="完全背包问题"></a>完全背包问题</h2><p>完全背包问题在0-1背包问题的基础上又增加了难度，背包中物品数量没有限制。不过完全背包还是可以用动态规划做，在0-1背包的基础上修改一下就行。</p>
-<p>动态转移方程为</p>
-<p>题目：<a target="_blank" rel="noopener" href="https://www.luogu.org/problemnew/show/P1616">P1616 疯狂的采药</a> 这题c*n太大，只能用一维数组做。</p>
+<p>运行完后<code>count</code>的值就是1的个数。</p>
+<p>如果<code>count</code>为0，则<code>x</code>为2的整数指数幂。</p>
 
     </div>
 
@@ -283,12 +281,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/kmp/" rel="prev" title="KMP算法">
-      <i class="fa fa-chevron-left"></i> KMP算法
+    <a href="/cpp/sort/" rel="prev" title="Sort()函数">
+      <i class="fa fa-chevron-left"></i> Sort()函数
     </a></div>
       <div class="post-nav-item">
-    <a href="/cppoptimize/" rel="next" title="C++优化">
-      C++优化 <i class="fa fa-chevron-right"></i>
+    <a href="/lookup/mdlookup/" rel="next" title="Markdown速查">
+      Markdown速查 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -349,7 +347,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98"><span class="nav-number">1.</span> <span class="nav-text">背包问题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#0-1%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98"><span class="nav-number">1.1.</span> <span class="nav-text">0-1背包问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%8C%E5%85%A8%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98"><span class="nav-number">1.2.</span> <span class="nav-text">完全背包问题</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BD%8D%E8%BF%90%E7%AE%97"><span class="nav-number">1.</span> <span class="nav-text">位运算</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%8D%E8%BF%90%E7%AE%97%E5%9F%BA%E7%A1%80"><span class="nav-number">1.1.</span> <span class="nav-text">位运算基础</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8A%A0%E5%87%8F"><span class="nav-number">1.2.</span> <span class="nav-text">加减</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E4%B8%80%E4%B8%AA%E6%95%B0%EF%BC%88B%EF%BC%89%E4%B8%AD%E6%9C%89%E5%A4%9A%E5%B0%911"><span class="nav-number">1.3.</span> <span class="nav-text">计算一个数（B）中有多少1</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -365,7 +363,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-count">12</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -477,7 +475,7 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
       repo        : 'mstbl.github.io',
       owner       : 'MSTBL',
       admin       : ['MSTBL'],
-      id          : 'de108ca73fb6c69b6dd562cfd56d4927',
+      id          : 'c7e2e183b389fd05ee90e7c7883c4867',
         language: 'zh-CN',
       distractionFreeMode: true
     });
