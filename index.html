@@ -157,6 +157,115 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/cpp/cppbase/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="MSTBL">
+      <meta itemprop="description" content="MSTBL的博客">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MSTBL的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/cpp/cppbase/" class="post-title-link" itemprop="url">C++基本</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-10-29 10:47:01" itemprop="dateCreated datePublished" datetime="2020-10-29T10:47:01+08:00">2020-10-29</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-03 15:23:41" itemprop="dateModified" datetime="2020-11-03T15:23:41+08:00">2020-11-03</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/c/" itemprop="url" rel="index"><span itemprop="name">c++</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="C-基本"><a href="#C-基本" class="headerlink" title="C++基本"></a>C++基本</h1><p>句尾加;</p>
+<h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 单行注释</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">块注释，不可嵌套</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> *一般写成这样</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*块注释也可以写在一行里*/</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="C-关键字"><a href="#C-关键字" class="headerlink" title="C++ 关键字"></a>C++ 关键字</h2><p><a target="_blank" rel="noopener" href="https://www.runoob.com/w3cnote/cpp-keyword-intro.html">https://www.runoob.com/w3cnote/cpp-keyword-intro.html</a></p>
+<h2 id="运算符-表达式"><a href="#运算符-表达式" class="headerlink" title="运算符 表达式"></a>运算符 表达式</h2><p><a target="_blank" rel="noopener" href="https://www.runoob.com/w3cnote/cpp-keyword-intro.html">https://www.runoob.com/w3cnote/cpp-keyword-intro.html</a></p>
+<p><code>=</code> 赋值运算符 自右向左</p>
+<p>赋值表达式返回指向目标的引用</p>
+<p>-&gt;</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a=b=c=d=<span class="number">100</span>;</span><br></pre></td></tr></table></figure>
+
+<p>合法，先把100赋值给d，之后把d的值赋给c…</p>
+<h2 id="输入输出"><a href="#输入输出" class="headerlink" title="输入输出"></a>输入输出</h2><h3 id="cin-cout"><a href="#cin-cout" class="headerlink" title="cin cout"></a>cin cout</h3><p>空格和回车会分隔输入</p>
+<p>输入char会截取第一个字符（不包括空格），后面的继续传递</p>
+<p>cin，cout没有返回值，<code>while(cin&gt;&gt;a)</code>中的返回值是<code>&gt;&gt;</code>操作符返回<code>istream&amp;类型</code></p>
+<h3 id="getchar-putchar"><a href="#getchar-putchar" class="headerlink" title="getchar putchar"></a>getchar putchar</h3><p>源自c语言</p>
+<p>输入输出单个字符</p>
+<p>回车也是字符</p>
+<p>putchar string会出错</p>
+<h2 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h2><h3 id="if"><a href="#if" class="headerlink" title="if"></a>if</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(boolean_expression)&#123;</span><br><span class="line">    statement(s);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(boolean_expression)</span><br><span class="line">&#123;</span><br><span class="line">   <span class="comment">// 如果布尔表达式为真将执行的语句</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">&#123;</span><br><span class="line">   <span class="comment">// 如果布尔表达式为假将执行的语句</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//写成一行</span></span><br><span class="line"><span class="keyword">if</span>(boolean_expression)statement;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(boolean_expression)&#123;statements;&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>()</span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span> <span class="keyword">if</span></span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="switch"><a href="#switch" class="headerlink" title="switch"></a>switch</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">switch</span>(expression)&#123;</span><br><span class="line">    <span class="keyword">case</span> constant-expression  :</span><br><span class="line">       statement(s);</span><br><span class="line">       <span class="keyword">break</span>; <span class="comment">//跳出循环，看情况写</span></span><br><span class="line">    <span class="keyword">case</span> constant-expression  :</span><br><span class="line">       statement(s);</span><br><span class="line">       <span class="keyword">break</span>;</span><br><span class="line">  </span><br><span class="line">    <span class="comment">// 可以有任意数量的 case 语句</span></span><br><span class="line">    <span class="keyword">default</span> : </span><br><span class="line">       statement(s);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h2><h3 id="for"><a href="#for" class="headerlink" title="for"></a>for</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> ( init; condition; increment )</span><br><span class="line">&#123;</span><br><span class="line">   statement(s);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>例子：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;<span class="number">5</span>; i++ )</span><br><span class="line">&#123;</span><br><span class="line">   <span class="built_in">cout</span>&lt;&lt;i;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="while"><a href="#while" class="headerlink" title="while"></a>while</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span>(condition)</span><br><span class="line">&#123;</span><br><span class="line">   statement(s);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">&#123;</span><br><span class="line">   statement(s);</span><br><span class="line">&#125;<span class="keyword">while</span>( condition ); <span class="comment">//这里有分号</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="资料来源"><a href="#资料来源" class="headerlink" title="资料来源"></a>资料来源</h2><p><a target="_blank" rel="noopener" href="https://www.runoob.com/cplusplus/cpp-switch.html">https://www.runoob.com/cplusplus/cpp-switch.html</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/cplusplus/cpp-if-else.html">https://www.runoob.com/cplusplus/cpp-if-else.html</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/jackbai1990/article/details/7467030">https://blog.csdn.net/jackbai1990/article/details/7467030</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/0d3777c8147b">https://www.jianshu.com/p/0d3777c8147b</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/cplusplus/cpp-do-while-loop.html">https://www.runoob.com/cplusplus/cpp-do-while-loop.html</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/cplusplus/cpp-for-loop.html">https://www.runoob.com/cplusplus/cpp-for-loop.html</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.runoob.com/cplusplus/cpp-while-loop.html">https://www.runoob.com/cplusplus/cpp-while-loop.html</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/lookup/lookup/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -188,7 +297,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-10-30 21:37:27" itemprop="dateModified" datetime="2020-10-30T21:37:27+08:00">2020-10-30</time>
+                <time title="修改时间：2020-11-03 15:12:03" itemprop="dateModified" datetime="2020-11-03T15:12:03+08:00">2020-11-03</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -211,12 +320,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="一些计算机相关网站"><a href="#一些计算机相关网站" class="headerlink" title="一些计算机相关网站"></a>一些计算机相关网站</h1><h2 id="开源协议"><a href="#开源协议" class="headerlink" title="开源协议"></a>开源协议</h2><p><a target="_blank" rel="noopener" href="https://www.mit-license.org/">MIT</a></p>
-<p><a target="_blank" rel="noopener" href="https://www.gnu.org/licenses/quick-guide-gplv3.html">GPL</a></p>
-<p><a target="_blank" rel="noopener" href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache</a></p>
-<p><a target="_blank" rel="noopener" href="https://creativecommons.org/choose/?lang=zh">CC</a></p>
-<p><a target="_blank" rel="noopener" href="https://choosealicense.com/licenses/">Choose a License</a></p>
-<h2 id="问答网站"><a href="#问答网站" class="headerlink" title="问答网站"></a>问答网站</h2><p><a target="_blank" rel="noopener" href="https://segmentfault.com/">思否</a></p>
+          <h1 id="一些计算机相关网站"><a href="#一些计算机相关网站" class="headerlink" title="一些计算机相关网站"></a>一些计算机相关网站</h1><h2 id="问答网站"><a href="#问答网站" class="headerlink" title="问答网站"></a>问答网站</h2><p><a target="_blank" rel="noopener" href="https://segmentfault.com/">思否</a></p>
 <p><a target="_blank" rel="noopener" href="https://stackoverflow.com/">Stack Overflow</a></p>
 <h2 id="教学"><a href="#教学" class="headerlink" title="教学"></a>教学</h2><p><a target="_blank" rel="noopener" href="https://pintia.cn/problem-sets?tab=0">PTA</a></p>
 <p><a target="_blank" rel="noopener" href="https://www.codecademy.com/catalog">Codecademy</a></p>
@@ -278,6 +382,11 @@
 <p><a target="_blank" rel="noopener" href="https://github.com/SSHeRun/CS-Xmind-Note">计算机专业课思维导图</a></p>
 <p><a target="_blank" rel="noopener" href="https://github.com/lizhenghn123/StudyBooks">学习资料</a></p>
 <p><a target="_blank" rel="noopener" href="https://github.com/ossu/computer-science">OSSU</a></p>
+<h2 id="开源协议"><a href="#开源协议" class="headerlink" title="开源协议"></a>开源协议</h2><p><a target="_blank" rel="noopener" href="https://www.mit-license.org/">MIT</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.gnu.org/licenses/quick-guide-gplv3.html">GPL</a></p>
+<p><a target="_blank" rel="noopener" href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache</a></p>
+<p><a target="_blank" rel="noopener" href="https://creativecommons.org/choose/?lang=zh">CC</a></p>
+<p><a target="_blank" rel="noopener" href="https://choosealicense.com/licenses/">Choose a License</a></p>
 
       
     </div>
@@ -437,7 +546,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-14 18:36:20" itemprop="dateModified" datetime="2020-09-14T18:36:20+08:00">2020-09-14</time>
+                <time title="修改时间：2020-11-03 15:25:09" itemprop="dateModified" datetime="2020-11-03T15:25:09+08:00">2020-11-03</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -461,8 +570,8 @@
 
       
           <h1 id="Markdown速查"><a href="#Markdown速查" class="headerlink" title="Markdown速查"></a>Markdown速查</h1><p>可加HTML</p>
-<p>行之间需加空行，要不然会连在一起</p>
-<h2 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">1.</span><br><span class="line"></span><br><span class="line"><span class="section"># 一级标题//#和文字间要有空格</span></span><br><span class="line"></span><br><span class="line"><span class="section">## 二级标题</span></span><br><span class="line"></span><br><span class="line"><span class="section">### 三级标题</span></span><br><span class="line"></span><br><span class="line">...//后面+空格加标题，n个#n级</span><br><span class="line"></span><br><span class="line">2.</span><br><span class="line"></span><br><span class="line">//超链接</span><br><span class="line"></span><br><span class="line">[<span class="string">文字</span>](<span class="link">url</span>)</span><br><span class="line"></span><br><span class="line">3.</span><br><span class="line"><span class="code">    ```语言//Markdown对语言名的支持很强大，比如c++即可以写成cpp又可以写成cpp，大小写不敏感</span></span><br><span class="line"><span class="code">    //此处不用空行</span></span><br><span class="line"><span class="code">    代码块</span></span><br><span class="line"><span class="code">    //此处也不用空行</span></span><br></pre></td></tr></table></figure>
+<p>一般行之间需加空行，要不然会连在一起</p>
+<h2 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">1.</span><br><span class="line"></span><br><span class="line"><span class="section"># 一级标题 //#和文字间要有空格</span></span><br><span class="line"></span><br><span class="line"><span class="section">## 二级标题</span></span><br><span class="line"></span><br><span class="line"><span class="section">### 三级标题</span></span><br><span class="line"></span><br><span class="line">... //后面+空格加标题，n个#n级,最多6级</span><br><span class="line"></span><br><span class="line">2.</span><br><span class="line"></span><br><span class="line">//超链接</span><br><span class="line"></span><br><span class="line">[<span class="string">文字</span>](<span class="link">url</span>)</span><br><span class="line"></span><br><span class="line">3.</span><br><span class="line"><span class="code">    ```语言//Markdown对语言名的支持很强大，比如c++既可以写成cpp又可以写成c++，且大小写不敏感</span></span><br><span class="line"><span class="code">    //此处不用空行</span></span><br><span class="line"><span class="code">    代码块</span></span><br><span class="line"><span class="code">    //此处也不用空行</span></span><br></pre></td></tr></table></figure>
 
 <p>4.</p>
 <p><code>行内语句</code></p>
@@ -471,7 +580,7 @@
 <p>引用 //引用可嵌套，或者说多重引用</p>
 </blockquote>
 <blockquote>
-<p>然<br>//这里不需要空行</p>
+<p>然<br>//这里不要空行，空行会隔开</p>
 <blockquote>
 <p>并<br>//同理，这里也不需要</p>
 <blockquote>
@@ -922,7 +1031,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-14 18:43:49" itemprop="dateModified" datetime="2020-09-14T18:43:49+08:00">2020-09-14</time>
+                <time title="修改时间：2020-11-03 15:23:41" itemprop="dateModified" datetime="2020-11-03T15:23:41+08:00">2020-11-03</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -959,14 +1068,24 @@
 <h3 id="缩写"><a href="#缩写" class="headerlink" title="缩写"></a>缩写</h3><p><a target="_blank" rel="noopener" href="https://public.oed.com/how-to-use-the-oed/abbreviations/">牛津英语缩写</a></p>
 <p><a target="_blank" rel="noopener" href="https://en.wiktionary.org/wiki/Wiktionary:Abbreviations_in_Webster">韦氏词典中的缩写</a></p>
 <h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><h3 id="块注释"><a href="#块注释" class="headerlink" title="块注释"></a>块注释</h3><p><code>/* */</code>不能嵌套</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*这样写</span></span><br><span class="line"><span class="comment">也</span></span><br><span class="line"><span class="comment">可以*/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> *但是一般在每一行前加&quot;*&quot;，并且&quot;*&quot;对齐</span></span><br><span class="line"><span class="comment"> *第一行和最后一行不写东西</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
-
 <hr>
 <p><strong><em>下面的有争议</em></strong></p>
-<h2 id="using-namespace-std"><a href="#using-namespace-std" class="headerlink" title="using namespace std"></a>using namespace std</h2><p>STD里东西太多，直接用<code>using namespace std</code>有一定风险，可能会导致命名冲突，如STD里有<code>search()</code>函数。</p>
-<p>可以通过把STD要用的东西分别写出来的方法，显式声明，降低风险</p>
+<h2 id="using-namespace-std"><a href="#using-namespace-std" class="headerlink" title="using namespace std"></a>using namespace std</h2><p>STD里东西太多，用<code>using namespace std</code>有一定风险，可能会导致命名冲突，如STD里有<code>search()</code>函数。</p>
+<p>可以通过把STD要用的东西分别写出来的方法，显式声明降低风险</p>
 <p>eg.</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> <span class="built_in">std</span>::<span class="built_in">cin</span>;</span><br><span class="line"><span class="keyword">using</span> <span class="built_in">std</span>::<span class="built_in">cout</span>;</span><br><span class="line"><span class="keyword">using</span> <span class="built_in">std</span>::ios_base;</span><br><span class="line"><span class="keyword">using</span> <span class="built_in">std</span>::max;</span><br><span class="line"><span class="keyword">using</span> <span class="built_in">std</span>::<span class="built_in">memset</span>;</span><br><span class="line"><span class="keyword">using</span> <span class="built_in">std</span>::min;</span><br><span class="line"><span class="keyword">using</span> <span class="built_in">std</span>::sort;</span><br><span class="line"><span class="keyword">using</span> <span class="built_in">std</span>::<span class="built_in">sqrt</span>;</span><br><span class="line"><span class="keyword">using</span> <span class="built_in">std</span>::<span class="built_in">string</span>;</span><br><span class="line"><span class="keyword">using</span> <span class="built_in">std</span>::<span class="built_in">vector</span>;</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> <span class="built_in">std</span>::<span class="built_in">cin</span>;</span><br><span class="line"><span class="keyword">using</span> <span class="built_in">std</span>::<span class="built_in">cout</span>;</span><br><span class="line"><span class="keyword">using</span> <span class="built_in">std</span>::ios_base;</span><br><span class="line"><span class="keyword">using</span> <span class="built_in">std</span>::max;</span><br><span class="line"><span class="keyword">using</span> <span class="built_in">std</span>::<span class="built_in">memset</span>;</span><br><span class="line"><span class="keyword">using</span> <span class="built_in">std</span>::min;</span><br><span class="line"><span class="keyword">using</span> <span class="built_in">std</span>::sort;</span><br><span class="line"><span class="keyword">using</span> <span class="built_in">std</span>::<span class="built_in">sqrt</span>;</span><br><span class="line"><span class="keyword">using</span> <span class="built_in">std</span>::<span class="built_in">string</span>;</span><br><span class="line"><span class="keyword">using</span> <span class="built_in">std</span>::<span class="built_in">vector</span>;</span><br><span class="line"><span class="keyword">using</span> <span class="built_in">std</span>::<span class="built_in">endl</span>;</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+
+<h2 id="复合类型声明"><a href="#复合类型声明" class="headerlink" title="复合类型声明"></a>复合类型声明</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> * p;</span><br></pre></td></tr></table></figure>
+
+<p><code>*</code>修饰的是p不是int</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>* p1,p2;</span><br></pre></td></tr></table></figure>
+
+<p>上面的语句里只有p1是指针p2不是</p>
+<p>两种写法</p>
+<ol>
+<li><code>int *p1;</code>强调p1是指针</li>
+<li><code>int* p2;</code>强调本次声明是复合类型声明</li>
+</ol>
 
       
     </div>
@@ -1017,7 +1136,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-14 18:43:48" itemprop="dateModified" datetime="2020-09-14T18:43:48+08:00">2020-09-14</time>
+                <time title="修改时间：2020-11-03 15:23:41" itemprop="dateModified" datetime="2020-11-03T15:23:41+08:00">2020-11-03</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -1041,7 +1160,7 @@
 
       
           <h1 id="C-优化"><a href="#C-优化" class="headerlink" title="C++优化"></a>C++优化</h1><h2 id="输入输出"><a href="#输入输出" class="headerlink" title="输入输出"></a>输入输出</h2><p>printf/scanf快于cout/cin，具体原因百度</p>
-<p>不过后者可以通过在main开始时加下面两行代码实现优化，优化后效率和前者差不多。</p>
+<p>不过后者可以通过在main开始时加下面三行代码实现优化，优化后效率和前者差不多。</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ios_base::sync_with_stdio(<span class="literal">false</span>);</span><br><span class="line"><span class="built_in">cin</span>.tie(<span class="number">0</span>);</span><br><span class="line"><span class="built_in">cout</span>.tie(<span class="number">0</span>);</span><br></pre></td></tr></table></figure>
 
 <h2 id="位运算"><a href="#位运算" class="headerlink" title="位运算"></a>位运算</h2><p>参考-&gt; <a href="/.../other/bitwise">位运算</a></p>
@@ -1270,101 +1389,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/algorithm/acproblem/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="MSTBL">
-      <meta itemprop="description" content="MSTBL的博客">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="MSTBL的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/algorithm/acproblem/" class="post-title-link" itemprop="url">排列组合问题</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-08-23 21:56:59 / 修改时间：22:23:00" itemprop="dateCreated datePublished" datetime="2020-08-23T21:56:59+08:00">2020-08-23</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%AE%97%E6%B3%95/" itemprop="url" rel="index"><span itemprop="name">算法</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="排列组合问题"><a href="#排列组合问题" class="headerlink" title="排列组合问题"></a>排列组合问题</h1><p>输出排列组合这类问题通常是递归的，比较适合用递归求解。可以作为深度优先搜索（DFS）的理解练习。</p>
-<h2 id="P1706-全排列问题"><a href="#P1706-全排列问题" class="headerlink" title="P1706 全排列问题"></a><a target="_blank" rel="noopener" href="https://www.luogu.org/problemnew/show/P1706">P1706 全排列问题</a></h2><p>本题要求输出 1<del>n n个数的全排列。可以以1</del>n为根节点分别建立一棵树，这棵树每个节点都有n个子节点，深度为n，对这些树组成的森林进行深度优先搜索,每次搜索到叶子节点时输出搜索路径并回溯。遇到用过的数时跳过搜索下一个。这样就可以实现题目要求的功能。</p>
-<p>关于建树，我们也可以以“0”作为根节点，将上述n棵树作为它的子树。这样就可以进行单源深搜。</p>
-<p>对于如何建树，我们只要在递归里用一层循环：</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">dfs</span><span class="params">(<span class="keyword">int</span> k)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">            dfs(k + <span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>在<code>dfs</code>函数中用一个判断语句同时实现判断是否到达子节点和输出：</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(k == n)</span><br><span class="line">   &#123;</span><br><span class="line">       print();</span><br><span class="line">       <span class="keyword">return</span>;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
-
-<p>用一个<code>res[]</code>数组来存答案,每次搜索前把i填入<code>res[k + 1]</code>中，因为我们从0开始搜索。为了知道每个数字是否用过，还需要一个<code>used[] </code>数组来存储1~n是否用过；在下一层搜索前将其改为<code>true</code>，下一层搜索完之后回归。</p>
-<p>下面是完整的<code>dfs()</code>函数的代码：</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">dfs</span><span class="params">(<span class="keyword">int</span> k)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(k == n)                  <span class="comment">//到达叶子结点</span></span><br><span class="line">    &#123;</span><br><span class="line">        print();</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(!used[i])</span><br><span class="line">        &#123;</span><br><span class="line">            used[i] = <span class="literal">true</span>;     <span class="comment">//记录使用情况</span></span><br><span class="line">            res[k + <span class="number">1</span>] = i;</span><br><span class="line">            dfs(k + <span class="number">1</span>);         <span class="comment">//递推</span></span><br><span class="line">            used[i] = <span class="literal">false</span>;    <span class="comment">//回归</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>此外，由于题目要求每个数字5位场宽，我们还需要设置场宽。这需要用到<code>&lt;iomanip&gt;</code>中的setw()。以下是print函数的实现：</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">print</span> <span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; setw(<span class="number">5</span>) &lt;&lt; res[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>最后还要注意一点的是在主函数中调用的是<code>dfs(0)</code>，用的是上述第二种建树方法，以下几题用的也是此种方法</p>
-<h2 id="P1157-组合的输出"><a href="#P1157-组合的输出" class="headerlink" title="P1157 组合的输出"></a><a target="_blank" rel="noopener" href="https://www.luogu.org/problemnew/show/P1157">P1157 组合的输出</a></h2><p>本题要求不用递归输出n个数中r个数的全排列。然而我用了递归。如果用递归的话有了上一题的经验就比较简单，稍微修改一下即可。可以在遍历下一层时只遍历比<code>k</code>大的数，这样就能实现功能，还不用判重。下面给出<code>dfs_2()</code>函数的代码：</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">dfs_2</span><span class="params">(<span class="keyword">int</span> k)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (b == r)         <span class="comment">//n改成r，上题中是n是因为全排列，n=r，下同 还要记得将print()中的n改成r</span></span><br><span class="line">    &#123;</span><br><span class="line">        res[r] = k;     <span class="comment">//这里需要注意一定要把最后一位填上</span></span><br><span class="line">        print();</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = k + <span class="number">1</span>; i &lt;= n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        res[b] = k;</span><br><span class="line">        b++;            <span class="comment">//b用来记录位数</span></span><br><span class="line">        search(i);</span><br><span class="line">        b--;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="P1691-有重复元素的排列问题"><a href="#P1691-有重复元素的排列问题" class="headerlink" title="P1691 有重复元素的排列问题"></a><a target="_blank" rel="noopener" href="https://www.luogu.org/problemnew/show/P1691">P1691 有重复元素的排列问题</a></h2><p>本题要求输出重复元素的全排列。也只需在P1706的基础上修改即可。可以记录每个元素的数目，像之前一样进行深搜，不一样的是，遇到用过的元素时将数目-1，直到数目变成0为止再进行类似上面的“剪枝”操作。</p>
-<p>不过首先本题的输入就是个问题。需要知道题目中的每个“元素”实际上就是26个字母之一。这样就可以用<code>&lt;string&gt;</code>，先将输入存入一个字符串，再对其进行处理：</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">input</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; n;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; tmp;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        num[tmp[i] - <span class="number">96</span>]++;     <span class="comment">//记录用过的次数 先-96会好理解一些</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>经过了上面两个题，本题的深搜代码本身不难改，下面是<code>dfs_3()</code>的代码：</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">dfs_3</span><span class="params">(<span class="keyword">int</span> k)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (k == n)</span><br><span class="line">    &#123;</span><br><span class="line">        print();</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= <span class="number">26</span>; i++)   <span class="comment">//每次对26个字母进行遍历</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (num[i])                 <span class="comment">//如果这个元素还有</span></span><br><span class="line">        &#123;</span><br><span class="line">            num[i]--;</span><br><span class="line">            res[k] = i;</span><br><span class="line">            dfs_3(k + <span class="number">1</span>);</span><br><span class="line">            num[i]++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>然而，本题的输出并不是很直接，我用了显式类型转换：</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">print</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">char</span> tmpchar = <span class="keyword">static_cast</span>&lt;<span class="keyword">char</span>&gt;(res[i] + <span class="number">96</span>); <span class="comment">//显式类型转换 记得把96加回去</span></span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; tmpchar;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    sum++;                          <span class="comment">//排列总数，在其他地方迭代也可</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1436,14 +1460,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-count">12</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
   </nav>
